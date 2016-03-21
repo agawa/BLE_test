@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D54C28F1C9EFFC3002B3F1A /* BLEMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D54C28E1C9EFFC3002B3F1A /* BLEMainViewController.m */; };
 		1DB25BCD1C95B0DD006AB4A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB25BCC1C95B0DD006AB4A1 /* main.m */; };
 		1DB25BD01C95B0DD006AB4A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB25BCF1C95B0DD006AB4A1 /* AppDelegate.m */; };
 		1DB25BD31C95B0DD006AB4A1 /* BLE_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DB25BD11C95B0DD006AB4A1 /* BLE_test.xcdatamodeld */; };
-		1DB25BD61C95B0DD006AB4A1 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB25BD51C95B0DD006AB4A1 /* MasterViewController.m */; };
-		1DB25BD91C95B0DD006AB4A1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB25BD81C95B0DD006AB4A1 /* DetailViewController.m */; };
 		1DB25BDC1C95B0DD006AB4A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DB25BDA1C95B0DD006AB4A1 /* Main.storyboard */; };
 		1DB25BDE1C95B0DD006AB4A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB25BDD1C95B0DD006AB4A1 /* Assets.xcassets */; };
 		1DB25BE11C95B0DD006AB4A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DB25BDF1C95B0DD006AB4A1 /* LaunchScreen.storyboard */; };
@@ -37,15 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D54C28D1C9EFFC3002B3F1A /* BLEMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLEMainViewController.h; path = Source/BLEMainViewController.h; sourceTree = "<group>"; };
+		1D54C28E1C9EFFC3002B3F1A /* BLEMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLEMainViewController.m; path = Source/BLEMainViewController.m; sourceTree = "<group>"; };
 		1DB25BC81C95B0DD006AB4A1 /* BLE_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLE_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB25BCC1C95B0DD006AB4A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1DB25BCE1C95B0DD006AB4A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1DB25BCF1C95B0DD006AB4A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1DB25BD21C95B0DD006AB4A1 /* BLE_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BLE_test.xcdatamodel; sourceTree = "<group>"; };
-		1DB25BD41C95B0DD006AB4A1 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		1DB25BD51C95B0DD006AB4A1 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		1DB25BD71C95B0DD006AB4A1 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		1DB25BD81C95B0DD006AB4A1 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		1DB25BDB1C95B0DD006AB4A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1DB25BDD1C95B0DD006AB4A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DB25BE01C95B0DD006AB4A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,6 +80,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D54C28B1C9EFEDE002B3F1A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1D54C28C1C9EFEF0002B3F1A /* Main */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1D54C28C1C9EFEF0002B3F1A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1D54C28D1C9EFFC3002B3F1A /* BLEMainViewController.h */,
+				1D54C28E1C9EFFC3002B3F1A /* BLEMainViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		1DB25BBF1C95B0DD006AB4A1 = {
 			isa = PBXGroup;
 			children = (
@@ -106,12 +120,9 @@
 		1DB25BCA1C95B0DD006AB4A1 /* BLE_test */ = {
 			isa = PBXGroup;
 			children = (
+				1D54C28B1C9EFEDE002B3F1A /* Source */,
 				1DB25BCE1C95B0DD006AB4A1 /* AppDelegate.h */,
 				1DB25BCF1C95B0DD006AB4A1 /* AppDelegate.m */,
-				1DB25BD41C95B0DD006AB4A1 /* MasterViewController.h */,
-				1DB25BD51C95B0DD006AB4A1 /* MasterViewController.m */,
-				1DB25BD71C95B0DD006AB4A1 /* DetailViewController.h */,
-				1DB25BD81C95B0DD006AB4A1 /* DetailViewController.m */,
 				1DB25BDA1C95B0DD006AB4A1 /* Main.storyboard */,
 				1DB25BDD1C95B0DD006AB4A1 /* Assets.xcassets */,
 				1DB25BDF1C95B0DD006AB4A1 /* LaunchScreen.storyboard */,
@@ -278,9 +289,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DB25BD91C95B0DD006AB4A1 /* DetailViewController.m in Sources */,
-				1DB25BD61C95B0DD006AB4A1 /* MasterViewController.m in Sources */,
 				1DB25BD01C95B0DD006AB4A1 /* AppDelegate.m in Sources */,
+				1D54C28F1C9EFFC3002B3F1A /* BLEMainViewController.m in Sources */,
 				1DB25BCD1C95B0DD006AB4A1 /* main.m in Sources */,
 				1DB25BD31C95B0DD006AB4A1 /* BLE_test.xcdatamodeld in Sources */,
 			);
@@ -506,6 +516,7 @@
 				1DB25BFD1C95B0DD006AB4A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1DB25BFE1C95B0DD006AB4A1 /* Build configuration list for PBXNativeTarget "BLE_testTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +525,7 @@
 				1DB25C001C95B0DD006AB4A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1DB25C011C95B0DD006AB4A1 /* Build configuration list for PBXNativeTarget "BLE_testUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +534,7 @@
 				1DB25C031C95B0DD006AB4A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
