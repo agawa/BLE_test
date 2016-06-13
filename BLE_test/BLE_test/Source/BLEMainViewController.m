@@ -10,7 +10,7 @@
 
 @import CoreBluetooth;
 
-@interface BLEMainViewController () <CBCentralManagerDelegate> {
+@interface BLEMainViewController () <CBCentralManagerDelegate, CBPeripheralManagerDelegate,CBPeripheralDelegate> {
     
     IBOutlet UILabel *logLabel;
 }
@@ -28,6 +28,7 @@
     // Do any additional setup after loading the view.
     [logLabel setText:@"起動したよ"];
     
+    self.peripheralManager.delegate = self;
     self.centralManager = [[CBCentralManager alloc] initWithDelegate:self
                                                                queue:nil];
     
@@ -52,6 +53,13 @@
   didConnectPeripheral:(CBPeripheral *)peripheral
 {
     [logLabel setText:@"接続成功"];
+    
+    // サービスの探索開始
+    peripheral.delegate = self;
+    [peripheral discoverServices:nil];
+    
+    // TODO 次は通信の受け取りから
+    
 }
 
 - (void)centralManager:(CBCentralManager *)central
@@ -69,6 +77,7 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
     [self.centralManager scanForPeripheralsWithServices:nil
                                                 options:nil];
 }
+
 
 - (void)centralManager:(CBCentralManager *)central
  didDiscoverPeripheral:(CBPeripheral *)peripheral
@@ -106,6 +115,17 @@ didFailToConnectPeripheral:(CBPeripheral *)peripheral
         default:
             break;
     }
+}
+
+// サービスの受け取り
+- (void)peripheral:(CBPeripheral *)peripheral
+didDiscoverServices:(NSError *)error
+{
+    NSArray* services = peripheral.services;
+    //  services.count;
+    
+    // サービス内の受け取り
+    
 }
 
 @end
